@@ -3,7 +3,9 @@ import axios from "axios";
 const containerVideos = document.querySelector(".videos__container");
 async function buscarEMostrarVideos() {
   try {
-    const busca = await axios.get("http://localhost:3000/videos");
+    const busca = await axios.get(
+      "https://gist.githubusercontent.com/joaolucas14/9e0cf087412471047d70d0f40a255ee2/raw/74e16fd33f3b2fb4f88bbcc823968dc78c48a638/gistfile1.txt"
+    );
     const videos = busca.data;
 
     videos.forEach((video) => {
